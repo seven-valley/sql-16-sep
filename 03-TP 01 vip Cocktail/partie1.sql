@@ -1,4 +1,4 @@
-
+DROP DATABASE invitation;
 CREATE DATABASE invitation CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE invitation;
@@ -6,8 +6,7 @@ USE invitation;
 -- CONSTRAINT pk_personne
 -- ALT + SHIFT + fleche : dupliquer la ligne
 CREATE TABLE inv_personne(
-    --id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    id int NOT NULL AUTO_INCREMENT CONSTRAINT pk_personne PRIMARY KEY,
+    id int NOT NULL AUTO_INCREMENT, 
     prenom VARCHAR(100) NOT NULL DEFAULT 'toto',
     nom VARCHAR(100) NOT NULL,
     age TINYINT(1) NOT NULL,
@@ -15,5 +14,6 @@ CREATE TABLE inv_personne(
     statut TINYINT(1) NOT NULL DEFAULT 1, -- 1 ok 0 pas ok
     type ENUM('membre','NON MEMBRE') NOT NULL DEFAULT 'NON MEMBRE',
     description TEXT, -- peut etre null
-    salaire INT
-)ENGINE=InnoDB;
+    salaire INT,
+    CONSTRAINT pk_personne PRIMARY KEY(id)
+) ENGINE=InnoDB; 

@@ -50,10 +50,10 @@ Mettre en place des jointures pour extraires les données
 - Afficher les chat avec les couleurs des yeux 
 
 ### TP Films
-- Afficher les chat avec les couleurs des yeux 
+- Afficher les films avec les catégories
 
 ### TP CRM 
-- Extraire les données avec plusieurs jointure
+- Extraire les données avec plusieurs jointures
 - mettre en place un left join  
   
  :shipit:  

@@ -56,7 +56,7 @@ Mettre en place des jointures pour extraires les données
 - Extraire les données avec plusieurs jointure
 - mettre en place un left join
 
-# Les raccourcis VS CODE
+# Les raccourcis VS CODE :shipit:
 
 ## dupliquer une ligne
 <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>fleche</kbd> (fleche haut et bas)
@@ -150,5 +150,5 @@ https://startbootstrap.com/template/small-business
 changer le themes de bootstrap  
 https://bootswatch.com/
 
-le openclassrooms de Envato 
+le openclassrooms de Envato   
 https://tutsplus.com/

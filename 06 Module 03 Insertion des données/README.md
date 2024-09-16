@@ -18,7 +18,7 @@ Et puis je rentre les valeurs :
 INSERT INTO film (id,titre,sortie) VALUES (1,'STAR WARS','1977/05/25');
 ```
 
-Je ne suis pas obliger de mettre l'ID
+Je ne suis pas obligé de mettre l'ID
 ```mysql
 INSERT INTO film (titre,sortie) VALUES ('STAR WARS','1977/05/25');
 ```
@@ -51,6 +51,12 @@ Pour vider la table :
 ```mysql
 DELETE FROM film;
 ```
+
+Pour vider la table et rpartir à l'ID=1:
+```mysql
+TRUNCATE film;
+```
+
 Effacer un film  
 Effacer un enregistrement
 ```mysql

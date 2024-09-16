@@ -24,7 +24,7 @@
 - Filtrer avec **LIMIT**
 - Classer avec **ORDER BY**
 
-**TP invitation**
+**TP 01 invitation**
 Création d'une table personne
   
 ![personne](./img/personne.png)
@@ -32,7 +32,7 @@ Création d'une table personne
 ## JOUR 2
 
 ### Révision
-TP de Révision chat du JOUR 1
+TP 02  de Révision chat du JOUR 1
 
 ### la clef étrangère
 - créer une clef étrangère  
@@ -46,13 +46,13 @@ TP de Révision chat du JOUR 1
 LEFT RIGHT ou INNER JOIN ?
 Mettre en place des jointures pour extraires les données
 
-### TP Chats
+### TP 03 Chats avec clef étrangère
 - Afficher les chat avec les couleurs des yeux 
 
-### TP Films
+### TP 04 Films  avec clef étrangère
 - Afficher les films avec les catégories
 
-### TP CRM 
+### TP 05 CRM 
 - Extraire les données avec plusieurs jointures
 - mettre en place un left join  
   

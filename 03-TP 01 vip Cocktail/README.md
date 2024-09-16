@@ -57,6 +57,22 @@ CREATE TABLE inv_personne(
 | George | Cloney | 62 | 01/01/1999 | 1 | membre  | juste beau | 4 000 000 |
 | Jean | DUJARDIN | 51 | 01/01/1994 | 0 | membre | brice de nice | 1 000 000 |
 
+
+```sql
+TRUNCATE inv_personne;
+INSERT INTO inv_personne (prenom,nom,age,inscription,statut,type,description,salaire) VALUES
+('Brad','PITT',60,'1970-01-01',1,'NON membre','lorem ipsum',2000000),
+('George','Cloney',62,'1999-01-01',1,'membre','juste beau',4000000),
+('Jean','DUJARDIN',51,'1994-01-01',0,'membre','brice de nice',1000000)
+;
+```
+
+fichier csv :  
+```csv
+NULL,Brad,PITT,60,1970-01-01,1,non membre,lorem ipsum,2000000
+NULL,George,Cloney,62,1999-01-01,1,membre,juste beau,4000000
+NULL,Jean,DUJARDIN,51,1994-01-01,0,membre,brice de nice,1000000
+```
 ## Partie 3 Afficher
 
 - afficher le plus gros chiffre d'affaire (avec MAX)

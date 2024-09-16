@@ -5,18 +5,6 @@
 ![salade](/img/10/salade.png)
 propmt db diagram :
 
-## Une clef étrangère ?
-- c'est la clef primaire d'une autre table
-- mise en place d'un **contrainte d'intégrité** de clef étragère:
-  - je viens vérifier que l'id ajouter est un id de clef primaire  
-  - La clef étragère couleur_id de la table fruit  
-doit correspondre à la clef primaire de couleur  
-
-# relation clef étrangère :
-**Many to One** et **One To many**
-Un fruit à une seule couleur : **Many to One**  
-Une couleur est posséder par plusieurs fruis **One to   Many** 
-
 ```
 Table fruit {
   id INT [pk, not null]
@@ -31,6 +19,19 @@ Table couleur {
 
 Ref: "couleur"."id" < "fruit"."couleur_id"
 ```
+
+## Une clef étrangère ?
+- c'est la clef primaire d'une autre table
+- mise en place d'un **contrainte d'intégrité** de clef étragère:
+- je viens vérifier que l'id ajouter est un id de clef primaire  
+- La clef étragère couleur_id de la table fruit doit correspondre à la clef primaire de couleur  
+
+# relation clef étrangère :
+**Many to One** et **One To many**
+Un fruit à une seule couleur : **Many to One**  
+Une couleur est posséder par plusieurs fruis **One to   Many** 
+
+
 
 ## Creation des tables Version 1 :
 ```mysql

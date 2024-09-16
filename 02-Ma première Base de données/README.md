@@ -120,7 +120,7 @@ Il est aussi possible de définir la clef primaire à la fin :
 ```mysql
 USE videotheque;
 CREATE TABLE film (
-  id int NOT NULL AUTO_INCREMENT,
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   titre VARCHAR(255) NOT NULL,
   sortie DATE NOT NULL,
   PRIMARY KEY (id)
@@ -134,7 +134,7 @@ je peux rajouter des commentaires avec **#** ou **--**
 USE videotheque;
 # creation table film;
 CREATE TABLE film (
-  id int NOT NULL AUTO_INCREMENT,
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   titre VARCHAR(255) NOT NULL,
   sortie DATE NOT NULL,
   PRIMARY KEY (id)

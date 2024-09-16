@@ -11,6 +11,6 @@
 1 - Création de la base de données **spa**  
 2 - Création de la table **chat**  
 3 - Creation de la table **couleur**
-4 - Insérer  les données
-5 - Afficher les chat avec leur couleur d'yeux
-6 - Faire le script pour supprimer les table (DROP TABLE)
+4 - Insérer  les données  
+5 - Afficher les chats avec leur couleur d'yeux  
+6 - Faire le script pour supprimer les table (DROP TABLE)  

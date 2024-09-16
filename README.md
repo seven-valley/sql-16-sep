@@ -54,9 +54,10 @@ Mettre en place des jointures pour extraires les données
 
 ### TP CRM 
 - Extraire les données avec plusieurs jointure
-- mettre en place un left join
-
-# Les raccourcis VS CODE :shipit:
+- mettre en place un left join  
+  
+ :shipit:  
+# Les raccourcis VS CODE
 
 ## dupliquer une ligne
 <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>fleche</kbd> (fleche haut et bas)

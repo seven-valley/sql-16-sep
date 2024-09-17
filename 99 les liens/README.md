@@ -1,7 +1,7 @@
 # les liens
 
 ## VS CODE
-Vs Code est un IDE
+Vs Code est un IDE  
 https://code.visualstudio.com/download 
 https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement  
 une Editeur de code avec la coloration syntaxique  

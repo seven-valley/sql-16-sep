@@ -1,7 +1,7 @@
 # La table de jointure
 
 ## Le modèle relationnel
-![db](../img/13/db.png)
+![db](../img/13/db.webp)
 
 ## Les données
 ![db](../img/13/data.png)

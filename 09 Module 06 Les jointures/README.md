@@ -109,7 +109,7 @@ ALTER TABLE `region` ADD FOREIGN KEY (`pays_id`) REFERENCES `pays` (`id`);
 ALTER TABLE `ville` ADD FOREIGN KEY (`region_id`) REFERENCES `region` (`id`);
 ```
 
-** les données**
+**les données**
 ```mysql
 
 INSERT INTO pays (id, nom) VALUES

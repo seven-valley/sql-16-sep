@@ -14,3 +14,34 @@
 4 - Insérer  les données  
 5 - Afficher les chats avec leur couleur d'yeux  
 6 - Faire le script pour supprimer les table (DROP TABLE)  
+
+```mysql
+CREATE TABLE chat (
+ id int NOT NULL AUTO_INCREMENT,
+ nom VARCHAR(50) NOT NULL,
+ couleur_id int NOT NULL,
+ CONSTRAINT pk_chat PRIMARY KEY (id)
+)ENGINE=INNODB;
+
+CREATE TABLE couleur (
+ id int NOT NULL AUTO_INCREMENT,
+ nom VARCHAR(50) NOT NULL,
+ CONSTRAINT pk_couleur PRIMARY KEY (id)
+)ENGINE=INNODB;
+
+ALTER TABLE chat ADD CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES couleur(id);
+```
+
+```mysql
+INSERT INTO couleur (nom) VALUES
+('marron'),
+('bleu');
+
+
+
+INSERT INTO chat (nom,couleur_id) VALUES
+('maine coon',1),
+('siaimois',2),
+('bengal',1),
+('Scottish Fold',1);
+```

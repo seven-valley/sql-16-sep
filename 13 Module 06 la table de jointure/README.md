@@ -69,7 +69,12 @@ INSERT INTO film (id, nom) VALUES
 (1, 'Fight Club'),
 (2, 'Once Upon a time in Hollywood');
 
-INSERT INTO film_has_acteur (film_id, acteur_id) VALUES ('1', '1'), ('2', '1'), ('2', '2');
+INSERT INTO film_has_acteur 
+(film_id, acteur_id) 
+VALUES 
+('1', '1'), 
+('2', '1'), 
+('2', '2');
 ```
 
 # Afficher tous les films et leur acteurs

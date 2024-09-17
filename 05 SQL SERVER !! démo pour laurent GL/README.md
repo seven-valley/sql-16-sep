@@ -15,4 +15,22 @@ CREATE TABLE employe(
 GO
 ```
 
+```sql
+CREATE TABLE [chat] (
+  [id] int PRIMARY KEY NOT NULL IDENTITY(1, 1),
+  [nom] VARCHAR(255) NOT NULL,
+  [couleur_id] int NOT NULL
+)
+GO
+
+CREATE TABLE [yeux] (
+  [id] int PRIMARY KEY NOT NULL IDENTITY(1, 1),
+  [nom] VARCHAR(255) NOT NULL
+)
+GO
+
+ALTER TABLE [chat] ADD CONSTRAINT fk_couleur FOREIGN KEY ([couleur_id]) REFERENCES [yeux] ([id])
+GO
+```
+
 

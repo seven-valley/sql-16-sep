@@ -1,4 +1,4 @@
-# Table de jointure
+# La clef étrangère
 
 ![salade](/img/08/salade.png)
   

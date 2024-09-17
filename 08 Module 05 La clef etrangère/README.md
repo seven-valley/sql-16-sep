@@ -37,7 +37,7 @@ Une couleur est posséder par plusieurs fruis **One to   Many**
 
 
 
-## Creation des tables Version 1 :
+## Création des tables Version 1 :
 ```mysql
 CREATE TABLE couleur (
   id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -53,7 +53,7 @@ CREATE TABLE fruit (
     CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES couleur(id)
 )ENGINE=InnoDB;
 ```
-## Creation des tables Version 2 :
+## Création des tables Version 2 :
 ```mysql
 
 CREATE TABLE couleur (
@@ -65,7 +65,7 @@ CREATE TABLE couleur (
 CREATE TABLE fruit (
   id INT PRIMARY  KEY AUTO_INCREMENT NOT NULL,
   nom VARCHAR(30) NOT NULL,
-  couleur_id INT  NULL,    
+  couleur_id INT  NULL    
 )ENGINE=InnoDB;
 
 -- ajout de la contrainte de clef etrangere foreign key

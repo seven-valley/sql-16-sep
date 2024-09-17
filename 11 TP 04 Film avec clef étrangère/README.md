@@ -13,3 +13,4 @@
 3 - Quand je supprime une catégorie avec des films associés categ_id devient NULL  
 4 - Dans une autre Base, Quand je supprime une catégorie, tous les films associés sont supprimés  
 5 - Afficher la moyenne de film par catégorie  **Super BONUS OPTIONNEL** 
+![moyenne](../img/11/moyenne.png)

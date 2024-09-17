@@ -45,3 +45,20 @@ INSERT INTO chat (nom,couleur_id) VALUES
 ('bengal',1),
 ('Scottish Fold',1);
 ```
+# propmt de dbDiagram.io
+https://dbdiagram.io/
+
+```
+Table couleur{
+  id int [pk,not null, increment]
+  nom varchar(30) [not null]
+}
+
+Table chat{
+  id int [pk,not null, increment]
+  nom varchar(30) [not null]
+  couleur_id int [not null]
+}
+
+Ref: "couleur"."id" < "chat"."couleur_id"
+```

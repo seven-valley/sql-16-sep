@@ -3,10 +3,10 @@
 ## VS CODE
 Vs Code est un IDE
 https://code.visualstudio.com/download 
-https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement
-une Editeur de code avec la coloration syntaxique
+https://fr.wikipedia.org/wiki/Environnement_de_d%C3%A9veloppement  
+une Editeur de code avec la coloration syntaxique  
 
-plugin pour voir les fichier README.md en Mark Down
+plugin pour voir les fichier README.md en Mark Down  
 https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
    
   

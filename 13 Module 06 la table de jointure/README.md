@@ -35,7 +35,7 @@ Ref "fk_film":"film"."id" < "film_has_acteur"."film_id"
 
 ```
 
-## LA Base de données
+## La Base de données
 ```mysql
 CREATE TABLE film (
   id INT  NOT NULL AUTO_INCREMENT,

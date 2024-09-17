@@ -11,7 +11,7 @@
 - Ajouter des champs avec un type  
 - Créer une contrainte de clef primare  
 - Créer une contrainte de nullité  
-- Mettre des valeur par défault  
+- Mettre des valeurs par défault  
 
 ### Ajouter des données
 - Ajouter des données avec ou sans clef primaire  
@@ -35,8 +35,8 @@ Création d'une table personne
 TP 02  de Révision chat du JOUR 1
 
 ### la clef étrangère
-- créer une clef étrangère  
-- remplir une table avec un clef étrangère  
+- Créer une clef étrangère  
+- Remplir une table avec une clef étrangère  
 - Présentation de db diagram    
 ![salade](./img/08/salade.png)
 

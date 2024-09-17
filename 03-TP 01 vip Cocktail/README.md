@@ -58,7 +58,7 @@ CREATE TABLE inv_personne(
 | Jean | DUJARDIN | 51 | 01/01/1994 | 0 | membre | brice de nice | 1 000 000 |
 
 
-```sql
+```mysql
 TRUNCATE inv_personne;
 INSERT INTO inv_personne (prenom,nom,age,inscription,statut,type,description,salaire) VALUES
 ('Brad','PITT',60,'1970-01-01',1,'NON membre','lorem ipsum',2000000),
@@ -86,3 +86,87 @@ NULL,Jean,DUJARDIN,51,1994-01-01,0,membre,brice de nice,1000000
 - proposer une requete avec LIKE '%..%'
 - Trier par age les membres
 
+```mysql
+-- afficher le plus gros chiffre d'affaire (avec MAX)
+SELECT 
+MAX(salaire) AS plus_gros_ca 
+FROM inv_personne;
+```
+
+```mysql
+-- afficher le plus petit chiffre d'affaire (avec MIN)
+SELECT 
+MIN(salaire) AS plus_gros_ca 
+FROM inv_personne;
+```
+```mysql
+-- afficher le nom de la personne du plus petit CA
+SELECT 
+salaire,prenom,nom
+FROM inv_personne 
+ORDER BY salaire ASC
+LIMIT 1;
+```
+
+```mysql
+-- afficher le nom de la personne du plus gros CA
+SELECT 
+salaire,prenom,nom
+FROM inv_personne 
+ORDER BY salaire DESC
+LIMIT 1;
+```
+
+```mysql
+-- afficher le salaire moyen
+SELECT AVG(salaire) AS salaire_moyen from inv_personne
+```
+
+```mysql
+-- afficher le nombre de personnes
+
+SELECT COUNT(id) FROM inv_personne;
+
+-- GROUP BY utilisé souvent avec COUNT
+```
+
+```mysql
+-- proposer une requete avec BETWEEN
+
+SELECT
+prenom,nom
+FROM inv_personne
+WHERE salaire BETWEEN 1000000 AND 40000000; 
+
+```
+
+alternative :
+```mysql  
+SELECT
+prenom,nom
+FROM inv_personne
+WHERE salaire > 1000000
+AND salaire < 4000000;
+```
+
+
+```mysql
+-- proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
+Select UCASE(prenom) FROM personne
+```
+
+
+```mysql
+-- proposer une requete avec LIKE '%..%'
+SELECT nom, prenom FROM personne
+WHERE prenom LIKE 'b%'
+```
+
+
+```mysql
+SELECT 
+prenom,nom
+FROM inv_personne
+WHERE type='membre'
+ORDER BY age,nom,prenom;
+```

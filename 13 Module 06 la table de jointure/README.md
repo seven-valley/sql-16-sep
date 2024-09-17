@@ -1,10 +1,11 @@
 # La table de jointure
-
+![film](../img/13/once.webp)
+![db](../img/13/titanic.webp)
 ## Le modèle relationnel
 ![db](../img/13/db.webp)
 
 ## Les données
-![db](../img/13/data.png)
+![db2](../img/13/data.png)
 
 ## DB diagram
 ```

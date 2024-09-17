@@ -3,8 +3,12 @@
 ![salade](/img/08/salade.png)
   
 ![salade](/img/10/salade.png)
-propmt db diagram :
 
+
+# pseudo code pour db diagram
+
+https://dbdiagram.io/home  
+prompt db diagram :
 ```
 Table fruit {
   id INT [pk, not null]
@@ -68,9 +72,7 @@ CREATE TABLE fruit (
 ALTER TABLE fruit ADD CONSTRAINT fk_couleur FOREIGN KEY (couleur_id) REFERENCES couleur (id);
 ```
 
-# pseudo code pour db diagram
 
-https://dbdiagram.io/home  
 
 ```mysql
 CREATE TABLE `fruit` (

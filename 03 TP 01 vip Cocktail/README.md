@@ -26,7 +26,30 @@ Créer un fichier SQL
 - avec création de la base
 - tester votre fichier en l'important dans PhpMyadmin
 
-## La correction :heart_eyes: :
+
+## Partie 2 Insertion des données
+
+
+| prenom | nom | age | inscription | statut | type | description | salaire |
+|----|---|---|---|---|---|---|---|
+| Brad | PITT | 60 | 01/01/1970 | 1 | non membre | lorem ipsum | 2 000 000 |
+| George | Cloney | 62 | 01/01/1999 | 1 | membre  | juste beau | 4 000 000 |
+| Jean | DUJARDIN | 51 | 01/01/1994 | 0 | membre | brice de nice | 1 000 000 |
+
+## Partie 3 Afficher
+
+- Afficher le plus gros chiffre d'affaire (avec MAX)
+- Afficher le plus petit chiffre d'affaire (avec MIN)
+- Afficher le nom de la personne du plus petit CA
+- Afficher le nom de la personne du plus gros CA
+- Afficher le salaire moyen
+- Afficher le nombre de personnes
+- Proposer une requete avec BETWEEN
+- Proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
+- Proposer une requete avec LIKE '%..%'
+- Trier par age les membres
+
+## La correction partie 1 :heart_eyes: :
 ```mysql
 DROP DATABASE invitation;
 CREATE DATABASE invitation CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -48,16 +71,8 @@ CREATE TABLE inv_personne(
     CONSTRAINT pk_personne PRIMARY KEY(id)
 ) ENGINE=InnoDB; 
 ```
-## Partie 2 Insertion des données
 
-
-| prenom | nom | age | inscription | statut | type | description | salaire |
-|----|---|---|---|---|---|---|---|
-| Brad | PITT | 60 | 01/01/1970 | 1 | non membre | lorem ipsum | 2 000 000 |
-| George | Cloney | 62 | 01/01/1999 | 1 | membre  | juste beau | 4 000 000 |
-| Jean | DUJARDIN | 51 | 01/01/1994 | 0 | membre | brice de nice | 1 000 000 |
-
-
+## La correction partie 2 :heart_eyes: :
 ```mysql
 TRUNCATE inv_personne;
 INSERT INTO inv_personne (prenom,nom,age,inscription,statut,type,description,salaire) VALUES
@@ -73,34 +88,23 @@ NULL,Brad,PITT,60,1970-01-01,1,non membre,lorem ipsum,2000000
 NULL,George,Cloney,62,1999-01-01,1,membre,juste beau,4000000
 NULL,Jean,DUJARDIN,51,1994-01-01,0,membre,brice de nice,1000000
 ```
-## Partie 3 Afficher
 
-- afficher le plus gros chiffre d'affaire (avec MAX)
-- afficher le plus petit chiffre d'affaire (avec MIN)
-- afficher le nom de la personne du plus petit CA
-- afficher le nom de la personne du plus gros CA
-- afficher le salaire moyen
-- afficher le nombre de personnes
-- proposer une requete avec BETWEEN
-- proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
-- proposer une requete avec LIKE '%..%'
-- Trier par age les membres
 
 ```mysql
--- afficher le plus gros chiffre d'affaire (avec MAX)
+-- Afficher le plus gros chiffre d'affaire (avec MAX)
 SELECT 
 MAX(salaire) AS plus_gros_ca 
 FROM inv_personne;
 ```
 
 ```mysql
--- afficher le plus petit chiffre d'affaire (avec MIN)
+-- Afficher le plus petit chiffre d'affaire (avec MIN)
 SELECT 
 MIN(salaire) AS plus_gros_ca 
 FROM inv_personne;
 ```
 ```mysql
--- afficher le nom de la personne du plus petit CA
+-- Afficher le nom de la personne du plus petit CA
 SELECT 
 salaire,prenom,nom
 FROM inv_personne 
@@ -109,7 +113,7 @@ LIMIT 1;
 ```
 
 ```mysql
--- afficher le nom de la personne du plus gros CA
+-- Afficher le nom de la personne du plus gros CA
 SELECT 
 salaire,prenom,nom
 FROM inv_personne 
@@ -118,12 +122,12 @@ LIMIT 1;
 ```
 
 ```mysql
--- afficher le salaire moyen
+-- Afficher le salaire moyen
 SELECT AVG(salaire) AS salaire_moyen from inv_personne
 ```
 
 ```mysql
--- afficher le nombre de personnes
+-- Afficher le nombre de personnes
 
 SELECT COUNT(id) FROM inv_personne;
 
@@ -131,7 +135,7 @@ SELECT COUNT(id) FROM inv_personne;
 ```
 
 ```mysql
--- proposer une requete avec BETWEEN
+-- Proposer une requete avec BETWEEN
 
 SELECT
 prenom,nom
@@ -151,13 +155,13 @@ AND salaire < 4000000;
 
 
 ```mysql
--- proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
+-- Proposer une requete avec UCASE(), UPPER(),LCASE(),LOWER()
 Select UCASE(prenom) FROM personne
 ```
 
 
 ```mysql
--- proposer une requete avec LIKE '%..%'
+-- Proposer une requete avec LIKE '%..%'
 SELECT nom, prenom FROM personne
 WHERE prenom LIKE 'b%'
 ```

@@ -164,3 +164,18 @@ FROM facture
 WHERE date_paiement IS NULL
 AND DATEDIFF(CURDATE(),date_crea)  > 30;
 ```
+
+autre méthode
+```mysql
+SELECT 
+client.nom,
+facture.reference,
+facture.total,
+DATEDIFF(CURRENT_DATE,facture.date_crea)-30 AS nb_jour
+FROM facture 
+INNER JOIN devis ON devis.id = facture.devis_id
+INNER JOIN projet ON projet.id = devis.projet_id
+INNER JOIN client ON client.id = projet.client_id
+WHERE DATEDIFF(CURRENT_DATE,facture.date_crea)-30 >30
+AND date_paiement IS NULL;
+```

@@ -98,7 +98,7 @@ INSERT INTO projet (nom, client_id) VALUES
 	('Logiciel de devis', 3),
 	('Site internet e-commerce', 4),
 	('Logiciel ERP', 2),
-	('Logiciel gestion de stock',4);
+	('Logiciel gestion de stock',5);
 
 INSERT INTO devis (version,reference, prix, projet_id) VALUES
 	('1','DEV2100A', 3000, 1),

@@ -9,21 +9,21 @@ CREATE TABLE client (
   id INT NOT NULL AUTO_INCREMENT,
   nom VARCHAR(100) NOT NULL,
   prenom VARCHAR(100),
-  CONSTRAINT PRIMARY KEY pk_client(id)
+  CONSTRAINT pk_client PRIMARY KEY pk_client(id)
 );
 
 CREATE TABLE commande (
   id INT NOT NULL AUTO_INCREMENT,
   date_achat DATETIME NOT NULL,
   client_id int NOT NULL,
-  CONSTRAINT PRIMARY KEY  pk_commande(id)
+  CONSTRAINT pk_commande PRIMARY KEY  pk_commande(id)
 );
 
 CREATE TABLE article (
   id INT NOT NULL AUTO_INCREMENT,
   nom VARCHAR(100) NOT NULL,
   prix float NOT NULL,
-   CONSTRAINT PRIMARY KEY  pk_article(id)
+   CONSTRAINT pk_article PRIMARY KEY  pk_article(id)
 );
 
 -- ajouter la table ligne ...

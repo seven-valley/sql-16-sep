@@ -113,9 +113,9 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
     VALUES
 	('FA001', 'site internet partie 1', 1500, 1, '2023-09-01','2023-10-01'),
 	('FA002', 'site internet partie 2', 1500, 1, '2023-09-20',null),
-	('FA003', 'logiciel CRM', 5000, 2, '2024-02-01',null),
-	('FA004', 'logiciel devis', 3000, 3, '2024-03-03','2024-04-03'),
-	('FA005', 'site ecommerce', 5000, 4, '2024-04-01',null),
-	('FA006', 'logiciel ERP', 2000, 5, '2024-04-01',null);
+	('FA003', 'logiciel CRM', 5000, 3, '2024-02-01',null),
+	('FA004', 'logiciel devis', 3000, 4, '2024-03-03','2024-04-03'),
+	('FA005', 'site ecommerce', 5000, 5, '2024-04-01',null),
+	('FA006', 'logiciel ERP', 2000, 6, '2024-04-01',null);
 
 ```

@@ -1,6 +1,6 @@
 # TP 7 SITE E-commerce
 
-![base](../img/13/data.png)
+![base](../img/15/base.png)
 
 
 # La base de données

@@ -91,14 +91,3 @@ INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
 ```
 
 
-# Afficher tous les films Léonardo
-```mysql
-SELECT 
-film.nom AS film,
-acteur.prenom,
-acteur.nom
-FROM film
-INNER JOIN film_has_acteur  ON film.id = film_has_acteur.film_id
-INNER JOIN acteur ON acteur.id = film_has_acteur.acteur_id
-WHERE acteur_id=1
-```

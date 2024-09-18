@@ -59,7 +59,7 @@ ALTER TABLE commande ADD FOREIGN KEY (client_id) REFERENCES client (id);
 | 1 | 08/09/2024 | 1 |
 
 ### la table ligne
-__En fonction de la commande de Brad PITT__
+**En fonction de la commande de Brad PITT**
   
    
 

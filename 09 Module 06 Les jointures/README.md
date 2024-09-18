@@ -138,3 +138,13 @@ INSERT INTO ville (id, nom, region_id) VALUES
  INNER JOIN region ON ville.region_id = region.id
  INNER JOIN pays ON region.pays_id= pays.id
 ```
+
+```mysql
+-- afficher le ville par pays
+SELECT
+pays.nom,
+ville.nom
+FROM pays
+LEFT JOIN region ON pays.id = region.pays_id
+LEFT JOIN ville ON region.id = ville.region_id;
+```

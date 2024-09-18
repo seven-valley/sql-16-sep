@@ -6,24 +6,24 @@
 # La base de données
 ```mysql
 CREATE TABLE client (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL AUTO_INCREMENT,
   nom VARCHAR(100) NOT NULL,
   prenom VARCHAR(100),
-  CONSTRAINT PRIMARY pk_client(id)
+  CONSTRAINT PRIMARY KEY pk_client(id)
 );
 
 CREATE TABLE commande (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL AUTO_INCREMENT,
   date_achat DATETIME NOT NULL,
   client_id int NOT NULL,
-  CONSTRAINT PRIMARY pk_commande(id)
+  CONSTRAINT PRIMARY KEY  pk_commande(id)
 );
 
 CREATE TABLE article (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  id INT NOT NULL AUTO_INCREMENT,
   nom VARCHAR(100) NOT NULL,
   prix float NOT NULL,
-   CONSTRAINT PRIMARY pk_article(id)
+   CONSTRAINT PRIMARY KEY  pk_article(id)
 );
 
 -- ajouter la table ligne ...

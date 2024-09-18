@@ -26,7 +26,7 @@ Créer un fichier SQL
 - avec création de la base
 - tester votre fichier en l'important dans PhpMyadmin
 
-## la correction :heart_eyes: :
+## La correction :heart_eyes: :
 ```mysql
 DROP DATABASE invitation;
 CREATE DATABASE invitation CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

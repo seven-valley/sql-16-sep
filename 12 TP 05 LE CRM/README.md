@@ -122,7 +122,9 @@ INSERT INTO facture (reference,info,total,devis_id,date_crea,date_paiement)
 1 - Afficher toutes les factures avec le nom des clients  
   
 ```mysql
-SELECT client.nom , facture.reference
+SELECT client.nom, 
+facture.reference,
+facture.total
 FROM client
 INNER JOIN projet ON projet.client_id = client.id
 INNER JOIN devis ON devis.projet_id = projet.id
@@ -158,14 +160,8 @@ SELECT SUM(total) FROM facture WHERE date_paiement IS NULL;
 ```
 6 - afficher les factures en retard de paiment 30 jours max
 avec le nombre de jours de retard
-```mysql
-SELECT reference,DATEDIFF(CURDATE(),date_crea) AS nb_jours
-FROM facture 
-WHERE date_paiement IS NULL
-AND DATEDIFF(CURDATE(),date_crea)  > 30;
-```
 
-autre méthode
+
 ```mysql
 SELECT 
 client.nom,

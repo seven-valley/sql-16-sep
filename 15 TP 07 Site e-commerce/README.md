@@ -66,4 +66,4 @@ ALTER TABLE commande ADD FOREIGN KEY (client_id) REFERENCES client (id);
 
 ## Partie 3 - Objectifs 
 1 - Afficher la commande de Brad PITT
-![base](../img/15/commande.png)
+![base](../img/15/commande3.png)

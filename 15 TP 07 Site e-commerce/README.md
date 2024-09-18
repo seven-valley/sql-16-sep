@@ -32,10 +32,10 @@ ALTER TABLE commande ADD FOREIGN KEY (client_id) REFERENCES client (id);
 ```
 
 ## Partie 1 - Objectifs
- 1- ajouter la table ligne
+ 1- Ajouter la table ligne
 
 ## Partie 2 - Objectifs 
-1 - insérer les données  
+1 - Insérer les données  
 
 ### la table article
 | id | nom | prix | 
@@ -51,9 +51,16 @@ ALTER TABLE commande ADD FOREIGN KEY (client_id) REFERENCES client (id);
 | 1 | Brad | PITT |
 | 2 | George | Cloney |
 | 3 | Jean | DUJARDIN |
-| 4 | PlayStation 3 | 100.00 |
+
 
 ### la table commande
 | id | date_achat | client_id | 
 |----|---|---|
 | 1 | 08/09/2024 | 1 |
+
+### la table ligne
+
+
+## Partie 3 - Objectifs 
+1 - Afficher la commande de Brad PITT
+![base](../img/15/commande.png)
